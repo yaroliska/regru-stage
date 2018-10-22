@@ -1,9 +1,14 @@
 {
-  "name": "REGRU frontend-stage",
+  "name": "",
   "version": "1.0.0",
   "description": "REGRU frontend-stage",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
   "devDependencies": {
     "@regru/eslint-config-regru": "^2.3.0",
+    "css-loader": "^1.0.0",
     "eslint": "^4.18.2",
     "eslint-plugin-compat": "^2.2.0",
     "eslint-plugin-jest": "^21.18.0",
@@ -12,8 +17,15 @@
     "eslint-plugin-regru": "2.0.2",
     "eslint-plugin-shopify": "^18.0.0",
     "eslint-plugin-vue": "^4.0.0",
+    "style-loader": "^0.23.1",
     "stylelint": "7.9.0",
     "stylelint-plugin-regru": "1.3.0",
-    "webpack": "^4.20.2"
+    "webpack": "^4.22.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "path": "^0.12.7"
   }
 }
