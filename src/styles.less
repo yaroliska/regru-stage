@@ -1,0 +1,250 @@
+//colors
+@light-grey-lighter:#f6f6f6;
+@light-grey-darker:#ededed;
+@dark-grey-lighter:#d4d3d3;
+@dark-grey-darker:#acacac;
+@dark-lighter:#3d3d3f;
+@dark-darker:#202124;
+@red-lighter:#f63f45;
+@red-darker:#cb1c22;
+@orange-lighter:#f2752e;
+@orange-darker:#ce5b19;
+@blue-lighter:#3d3d3f;
+@blue-darker:#1e58bb;
+@yellow-lighter:#ffd543;
+@yellow-darker:#e3b924;
+@purple-lighter:#a054c6;
+@purple-darker:#803aa4;
+@green-lighter:#11bf5a;
+@green-darker:#039c43;
+
+//fonts
+@fontM:'Montserrat';
+@fontMRegular:'@{fontM}-Regular';
+@fontMBold:'@{fontM}-Bold';
+@fontMBlack:'@{fontM}-Black';
+@fontMMedium:'@{fontM}-Medium';
+@fontD:'Domine';
+@fontDRegular:'@{fontD}-Regular';
+@fontDBold:'@{fontD}-Bold';
+
+//
+.font(@fontName; @urlName: @fontName; @weight; @style: normal) {
+  font-family: '@{urlName}';
+  src: url('../src/fonts/@{fontName}/@{urlName}.ttf') format('truetype');
+  font-weight: @weight;
+  font-style: @style;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    font-size:100%;
+}
+strong, b {
+  font-weight: inherit;
+}
+
+@font-face {
+  .font(@fontM; @fontMRegular; normal);
+}
+@font-face {
+  .font(@fontM; @fontMBold; bold);
+}
+@font-face {
+  .font(@fontM; @fontMMedium; 500);
+}
+@font-face {
+  .font(@fontM; @fontMBlack; normal);
+}
+@font-face {
+  .font(@fontD; @fontDRegular; 700);
+}
+@font-face {
+  .font(@fontD; @fontDBold; bold);
+}
+
+//typography
+.header{
+    font-family:@fontMBlack;
+    font-weight: normal;
+    h1{
+        font-size:64pt;
+        line-height:78pt;
+    }
+    h2{
+        font-size:50pt;
+        line-height:65pt;
+    }
+    h3{
+        font-size:40pt;
+        line-height:52pt;
+    }
+    h4{
+        font-size:32pt;
+        line-height:42pt;
+    }
+    h5{
+        font-size:28pt;
+        line-height:36pt;
+    }
+}
+
+.title{
+    font-size:24pt;
+    line-height: 32pt;
+}
+.title_1-bold{
+    &:extend(.title);
+    font-family:@fontMBold;
+}
+.title_1-regular{
+    &:extend(.title);
+    font-family:@fontMRegular;
+}
+.title_2-bold{
+    &:extend(.title);
+    font-family:@fontDBold;
+}
+.title_2-regular{
+    &:extend(.title);
+    font-family:@fontDRegular;
+}
+.subtitle{
+    font-size:18pt;
+    line-height: 26pt;
+}
+.subtitle_1-bold{
+    &:extend(.subtitle);
+    font-family:@fontMBold;
+}
+.subtitle_1-regular{
+    &:extend(.subtitle);
+    font-family:@fontMRegular;
+}
+.subtitle_1-medium{
+    &:extend(.subtitle);
+    font-family:@fontMMedium;
+}
+.subtitle_2-bold{
+    &:extend(.subtitle);
+    font-family:@fontDBold;
+}
+.subtitle_2-regular{
+    &:extend(.subtitle);
+    font-family:@fontDRegular;
+}
+.p{
+    font-size:16pt;
+    line-height:24pt;
+}
+
+.p_1-bold{
+    &:extend(.p);
+    font-family:@fontMBold;
+}
+.p_1-medium{
+    &:extend(.p);
+    font-family:@fontMMedium;
+}
+.p_1-regular{
+    &:extend(.p);
+    font-family:@fontMRegular;
+}
+.p_2-bold{
+    &:extend(.p);
+    font-family:@fontDBold;
+}
+.p_2-regular{
+    &:extend(.p);
+    font-family:@fontDRegular;
+}
+
+.description{
+    font-size:14pt;
+    line-height:22pt;
+}
+.description_1-bold{
+    &:extend(.description);
+    font-family:@fontMBold;
+}
+.description_1-medium{
+    &:extend(.description);
+    font-family:@fontMMedium;
+}
+
+.description_1-regular{
+    &:extend(.description);
+    font-family:@fontMRegular;
+}
+
+.description_2-bold{
+    &:extend(.description);
+    font-family:@fontDBold;
+}
+
+.description_2-regular{
+    &:extend(.description);
+    font-family:@fontDRegular;
+}
+
+.small-text{
+    font-size:14pt;
+    line-height:22pt;
+}
+.small-text_1-bold{
+    &:extend(.small-text);
+    font-family:@fontMBold;
+}
+.small-text_1-medium{
+    &:extend(.small-text);
+    font-family:@fontMMedium;
+}
+
+.small-text_1-regular{
+    &:extend(.small-text);
+    font-family:@fontMRegular;
+}
+
+.small-text_2-bold{
+    &:extend(.small-text);
+    font-family:@fontDBold;
+}
+
+.small-text_2-regular{
+    &:extend(.small-text);
+    font-family:@fontDRegular;
+}
+.button{
+    font-family:@fontMBold;
+    &_large{
+        font-size:18pt;
+    }
+    &_small{
+        font-size:14pt;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+    display: flex;
+    flex-direction:row;
+    .column{
+      padding:20px;
+  }
+}
+

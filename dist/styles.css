@@ -1,3 +1,202 @@
-.title {
-  color: #eee;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 100%;
+}
+strong,
+b {
+  font-weight: inherit;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../src/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../src/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../src/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../src/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Domine-Regular';
+  src: url('../src/fonts/Domine/Domine-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Domine-Bold';
+  src: url('../src/fonts/Domine/Domine-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+.header {
+  font-family: 'Montserrat-Black';
+  font-weight: normal;
+}
+.header h1 {
+  font-size: 64pt;
+  line-height: 78pt;
+}
+.header h2 {
+  font-size: 50pt;
+  line-height: 65pt;
+}
+.header h3 {
+  font-size: 40pt;
+  line-height: 52pt;
+}
+.header h4 {
+  font-size: 32pt;
+  line-height: 42pt;
+}
+.header h5 {
+  font-size: 28pt;
+  line-height: 36pt;
+}
+.title,
+.title_1-bold,
+.title_1-regular,
+.title_2-bold,
+.title_2-regular {
+  font-size: 24pt;
+  line-height: 32pt;
+}
+.title_1-bold {
+  font-family: 'Montserrat-Bold';
+}
+.title_1-regular {
+  font-family: 'Montserrat-Regular';
+}
+.title_2-bold {
+  font-family: 'Domine-Bold';
+}
+.title_2-regular {
+  font-family: 'Domine-Regular';
+}
+.subtitle,
+.subtitle_1-bold,
+.subtitle_1-regular,
+.subtitle_1-medium,
+.subtitle_2-bold,
+.subtitle_2-regular {
+  font-size: 18pt;
+  line-height: 26pt;
+}
+.subtitle_1-bold {
+  font-family: 'Montserrat-Bold';
+}
+.subtitle_1-regular {
+  font-family: 'Montserrat-Regular';
+}
+.subtitle_1-medium {
+  font-family: 'Montserrat-Medium';
+}
+.subtitle_2-bold {
+  font-family: 'Domine-Bold';
+}
+.subtitle_2-regular {
+  font-family: 'Domine-Regular';
+}
+.p,
+.p_1-bold,
+.p_1-medium,
+.p_1-regular,
+.p_2-bold,
+.p_2-regular {
+  font-size: 16pt;
+  line-height: 24pt;
+}
+.p_1-bold {
+  font-family: 'Montserrat-Bold';
+}
+.p_1-medium {
+  font-family: 'Montserrat-Medium';
+}
+.p_1-regular {
+  font-family: 'Montserrat-Regular';
+}
+.p_2-bold {
+  font-family: 'Domine-Bold';
+}
+.p_2-regular {
+  font-family: 'Domine-Regular';
+}
+.description,
+.description_1-bold,
+.description_1-medium,
+.description_1-regular,
+.description_2-bold,
+.description_2-regular {
+  font-size: 14pt;
+  line-height: 22pt;
+}
+.description_1-bold {
+  font-family: 'Montserrat-Bold';
+}
+.description_1-medium {
+  font-family: 'Montserrat-Medium';
+}
+.description_1-regular {
+  font-family: 'Montserrat-Regular';
+}
+.description_2-bold {
+  font-family: 'Domine-Bold';
+}
+.description_2-regular {
+  font-family: 'Domine-Regular';
+}
+.small-text,
+.small-text_1-bold,
+.small-text_1-medium,
+.small-text_1-regular,
+.small-text_2-bold,
+.small-text_2-regular {
+  font-size: 14pt;
+  line-height: 22pt;
+}
+.small-text_1-bold {
+  font-family: 'Montserrat-Bold';
+}
+.small-text_1-medium {
+  font-family: 'Montserrat-Medium';
+}
+.small-text_1-regular {
+  font-family: 'Montserrat-Regular';
+}
+.small-text_2-bold {
+  font-family: 'Domine-Bold';
+}
+.small-text_2-regular {
+  font-family: 'Domine-Regular';
+}
+.button {
+  font-family: 'Montserrat-Bold';
+}
+.button_large {
+  font-size: 18pt;
+}
+.button_small {
+  font-size: 14pt;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.content .column {
+  padding: 20px;
 }
